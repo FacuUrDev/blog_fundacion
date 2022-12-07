@@ -1,0 +1,307 @@
+:root{/*variables de colores */
+    --color-primary: rgb(78, 49, 49) ;
+    --color-secondary: rgb(3, 24, 3)  ;
+    --color-title: black ;
+    --color-text: grey  ;
+    --color-bg: rgba(209, 230, 182, 0.849) ;
+    --font-title:panton;
+    --font-text:pantonh;
+    --hover-color: rgba(53, 65, 49, 0.753) ;
+    --color-header: rgb(216, 195, 195);
+}
+
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+    font-family:var(--font-text);
+
+  }
+
+/* Configuraciones de menu */
+  .menu a {
+    font: normal 300 25px "Roboto", sans-serif;
+    color: #fff;
+    padding: 35px;
+    text-decoration: none;
+  }
+  /* Pasar mouse */
+  .menu a:hover {
+    color: #00bcd4;
+    background-color: #fff;
+    padding-bottom: 29px;
+  }
+  /* Titulo desplegable */
+  h1 {
+    font: normal 50 75px "Roboto", sans-serif;
+    color: #fff;
+    letter-spacing: -80px;
+    margin: 0;
+    position: absolute;
+    left: 120px;
+    top: 180px;
+    animation: extender 8s ease 0.5s alternate 1 forwards;
+  }
+  @keyframes extender {
+    100% {
+      left: 120px;
+      letter-spacing: 0px;
+    }
+  }
+  /* Bajo titulo */
+  h2 {
+    font: normal 500 20px "Roboto", sans-serif;
+    color: #fff;
+    letter-spacing: 3.0px;
+    margin: 0;
+    position: absolute;
+    left: 120px;
+    top: 300px;
+  }
+  
+  
+/* ----------------------*/
+
+
+.fondo00,
+.fondo01,
+.fondo1,
+.fondo2 {
+  height: 820px;
+  width: 1024px;
+  margin: 0;
+  position: relative;
+  top: 0px;
+  background: no-repeat fixed;
+}
+/* color de hover de cada texto */
+.fondo00 {
+  height: 130px;
+  background-color:var(--hover-color);
+}
+
+.fondo01 {
+  height: 640px;
+  background-color: var(--hover-color) ;
+  background-image: url(http://i.imgsafe.org/9c75394.png);
+}
+
+.fondo1 {
+  top: -50px;
+  background-size: cover;
+  background-image: url(http://i.imgsafe.org/8f3e77a.jpg);
+}
+
+.fondo2 {
+  top: -50px;
+  background-size: cover;
+  background-image: url(http://i.imgsafe.org/7d45bbe.jpg);
+}
+
+h3 {
+  font: normal 500 50px 'Roboto', sans-serif;
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  top: 270px;
+  opacity: 0.5;
+}
+
+h3:hover {
+  opacity: 0.9;
+  text-shadow: 2px 2px 0px grey;
+}
+
+.fondo1 .texto1,
+.fondo1 .texto2,
+.fondo1 .texto3,
+.fondo1 .texto4,
+.fondo1 .texto5 {
+  background-color: #FFF;
+  width: 804px;
+  opacity: 0.5;
+  position: absolute;
+  left: 100px;
+  font: normal 300 15px 'Roboto', sans-serif;
+  padding: 10px;
+  text-align: justify;
+}
+/* Posicion y tamaño de los textos */
+.fondo1 .texto1 {
+  height: 95px;
+  top: 350px;
+}
+
+.fondo1 .texto2 {
+  height: 60px;
+  top: 450px;
+}
+
+.fondo1 .texto3 {
+  height: 75px;
+  top: 550px;
+}
+
+.fondo1 .texto4 {
+  height: 95px;
+  top: 650px;
+}
+
+.fondo1 .texto5 {
+  height: 60px;
+  top: 755px;
+}
+
+.fondo1 .texto1:hover,
+.fondo1 .texto2:hover,
+.fondo1 .texto3:hover,
+.fondo1 .texto4:hover,
+.fondo1 .texto5:hover {
+  opacity: 0.95;
+  background-color: var(--hover-color);
+  color: white;
+}
+/* No muy seguro de esta parte pero mejor no tocar */
+.diagrama {
+  width: 339px;
+  height: 339px;
+  background: no-repeat;
+  background-size: contain;
+  background-image: url(http://i.imgsafe.org/5298de1.png);
+  position: relative;
+  top: 37px;
+  left: 585px;
+  opacity: 0.5;
+}
+
+.diagrama:hover {
+  opacity: 0.95;
+  background-image: url(http://i.imgsafe.org/677ac69.png);
+}
+
+.serv,
+.atenc {
+  font: normal 500 50px 'Roboto', sans-serif;
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  opacity: 0.5;
+}
+
+.serv {
+  top: 90px;
+}
+
+.atenc {
+  top: 345px;
+}
+
+.serv:hover,
+.atenc:hover {
+  opacity: 0.9;
+  text-shadow: 2px 2px 0px grey;
+}
+
+/* ---------------------*/
+/* footer*/
+/* ---------------------*/
+
+  
+  nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: var(--color-header);
+  }
+  
+
+  nav img{
+    margin: 25px;
+    background-color:rgba(231, 228, 231, 0) ;
+
+  }
+
+
+  nav ul{
+    list-style-type: none ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav ul li {
+    padding: 25px;
+  }
+  
+  nav ul li a{
+    text-decoration : none;
+    font-size: 20px;
+    font-weight: 30px;
+    color:rgb(185, 16, 87);
+    font-family:var(--font-title);
+  }
+  nav ul li a:hover {
+    color: rgb(49, 25, 187);
+  }
+  
+  main{
+    background-color: var(--color-bg );
+    display: flex;
+    padding: 20px;
+    min-height: 80vh;
+    width: 100vw;
+    flex-direction: column;
+  }
+  
+  footer{
+    background-color: var( --color-header);
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 70px;
+    padding: 50px;
+    align-items: center;
+    font: normal 300 20px 'Roboto', sans-serif;
+  }
+
+  footer ul {
+    list-style-type: none;
+  }
+
+  footer ul li{
+    color: var(--color-title);
+    text-decoration: none;
+    font: normal 300 15px 'Roboto', sans-serif;
+  }
+  
+
+  footer image{
+    margin: 50px;
+
+  }
+
+
+  .about{
+    display: flex;
+  }
+
+  .about-content{
+    width: 350px;
+    padding: 50px;
+  }
+
+
+  .photos{
+    margin-top: 150px;
+    display: flex;
+    justify-self: center;
+    width: 60%;
+    flex-wrap: wrap;
+    
+  }
+
+   
